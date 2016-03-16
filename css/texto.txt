@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
+@mixin date ($back, $borde, $color) {
+  background-color: $back;
+  border: 1px solid $back;
+  color: $color;
+}
+
+@include date (red, 1px solid , #27AD60);
+
+
+
+#action .col-sm-5 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
+}
+
+.btn-common {
+  &:hover, &:focus {
+    outline: none;
+    background: none;
+    box-shadow: none;
+    color: #d29948;
+  }
+}
+ %button{
+ padding:10px;
+ color:green;
+ }
+.cancelar{
+  %extend  %button; est genera que llame a todos los atributos del button;
+}
+
+/*************************
+*******Header******
+**************************/
+
+
+
+
+
+
+  
+
+  
+
+
+
